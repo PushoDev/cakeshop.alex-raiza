@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./src/imgs/logo.jpg" />
+  <link rel="icon" type="image/svg+xml" href="./cakeshop.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CAKESHOP - Manzanillo</title>
-  <meta name="description" content="CakeShop - Hace tu Vida mas Dulce. Contactenos: +53 5 3788872" />
+  <meta name="description" content="CakeShop - Hace tu Vida mas Dulce. Contáctenos: +53 5 3788872" />
   <!-- Estilo -->
   <link rel="stylesheet" href="./src/main.css">
   <!--~~~~~~~~~~ REMIXICONS ~~~~~~~~~~-->
@@ -20,7 +20,6 @@
 <body>
   <!--~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~-->
   <header class="header" id="header">
-
     <nav>
       <a href="#">CAKESHOP</a>
       <div class="nav__menu" id="nav-menu">
@@ -40,13 +39,11 @@
           <li>
             <a href="#" class="nav__link">Contactos</a>
           </li>
-          <!-- Otros Btns -->
-          <div class="nav__close" id="nav-close">
-            <i class="i-close-large-line"></i>
-          </div>
-
         </ul>
-        <div class="nav__social" id="nav-close">
+        <div class="nav__close" id="nav-close">
+          <i class="i-close-large-line"></i>
+        </div>
+        <div class="nav__social">
           <a href="#" target="_blank" class="nav__social-link">
             <i class="ri-close-large-line"></i>
           </a>
@@ -65,40 +62,26 @@
   <!--~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~-->
   <main>
     <!--~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~-->
-    <section class="home" id="home">
-
-    </section>
+    <section class="home" id="home"></section>
 
     <!--~~~~~~~~~~~~~~~ FAVORITES ~~~~~~~~~~~~~~~-->
-    <section class="favorite" id="favorites">
-
-    </section>
+    <section class="favorite" id="favorites"></section>
 
     <!--~~~~~~~~~~~~~~~ CARE ~~~~~~~~~~~~~~~-->
-    <section class="care" id="care">
-
-    </section>
+    <section class="care" id="care"></section>
 
     <!--~~~~~~~~~~~~~~~ BANNER ~~~~~~~~~~~~~~~-->
-    <section class="banner">
-
-    </section>
+    <section class="banner"></section>
 
     <!--~~~~~~~~~~~~~~~ PRODUCTS ~~~~~~~~~~~~~~~-->
-    <section class="products" id="products">
-
-    </section>
+    <section class="products" id="products"></section>
 
     <!--~~~~~~~~~~~~~~~ CONTACT ~~~~~~~~~~~~~~~-->
-    <section class="contact" id="contact">
-
-    </section>
+    <section class="contact" id="contact"></section>
   </main>
 
   <!--~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~-->
-  <footer class="footer">
-
-  </footer>
+  <footer class="footer"></footer>
 
   <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
   <script src="./src/assets/js/scrollreveal.min.js"></script>
@@ -107,6 +90,12 @@
   <script src="./src/assets/js/swiper-bundle.min.js"></script>
 
   <!--~~~~~~~~~~ MAIN JS ~~~~~~~~~~-->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const metaDescription = document.querySelector('meta[name="description"]');
+      console.log('Descripción de la página:', metaDescription.content);
+    });
+  </script>
 </body>
 
 </html>
