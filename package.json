@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^7.0.0"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4"
   }
 }
