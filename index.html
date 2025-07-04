@@ -15,57 +15,143 @@
   <link rel="stylesheet" href="./src/assets/fonts/remixicon.css">
   <!--~~~~~~~~~~ SWIPER CSS ~~~~~~~~~~-->
   <link rel="stylesheet" href="./src/assets/css/swiper-bundle.min.css">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const metaDescription = document.querySelector('meta[name="description"]');
+      console.log('Descripción de la página:', metaDescription.content);
+    });
+  </script>
 </head>
 
 <body>
   <!--~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~-->
   <header class="header" id="header">
-    <nav>
-      <a href="#">CAKESHOP</a>
+    <nav class="nav container">
+      <a class="nav__logo" href="#">CAKESHOP</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li>
-            <a href="#" class="nav__link">Portada</a>
+            <a href="#home" class="nav__link">Portada</a>
           </li>
           <li>
-            <a href="#" class="nav__link">Favoritos</a>
+            <a href="#favorites" class="nav__link">Favoritos</a>
           </li>
           <li>
-            <a href="#" class="nav__link">Comentarios</a>
+            <a href="#care" class="nav__link">Comentarios</a>
           </li>
           <li>
-            <a href="#" class="nav__link">Productos</a>
+            <a href="#products" class="nav__link">Productos</a>
           </li>
           <li>
-            <a href="#" class="nav__link">Contactos</a>
+            <a href="#contact" class="nav__link">Contacto</a>
           </li>
         </ul>
+        <!-- Btn Hamburguer -->
         <div class="nav__close" id="nav-close">
-          <i class="i-close-large-line"></i>
+          <i class="ri-close-large-line"></i>
         </div>
+        <!-- Redes Sociales -->
         <div class="nav__social">
-          <a href="#" target="_blank" class="nav__social-link">
-            <i class="ri-close-large-line"></i>
-          </a>
+          <!-- Facebook -->
           <a href="#" target="_blank" class="nav__social-link">
             <i class="ri-facebook-circle-fill"></i>
           </a>
+          <!-- Instagram -->
           <a href="#" target="_blank" class="nav__social-link">
             <i class="ri-instagram-line"></i>
           </a>
+          <!-- Creador -->
+          <a href="#" target="_blank" class="nav__social-link">
+            <i class="ri-blogger-line"></i>
+          </a>
         </div>
       </div>
-      <div class="nav__toggle" id="nav-toggle"></div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-apps-2-line"></i>
+      </div>
     </nav>
   </header>
 
   <!--~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~-->
   <main>
     <!--~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~-->
-    <section class="home" id="home"></section>
+    <section class="home" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <h1 class="home__title">
+            ENDLESS <br> CAKE <br> DELIGHTS
+          </h1>
+          <p class="home__description">
+            Craving something sweet and quick?
+            Cakes are the perfect solution,
+            always ready to satisfy your midday sweet
+            tooth and bring joy to any moment.
+          </p>
+          <img src="./src/assets/img/cake-outline.png" alt="image" class="home__cake-outline">
+
+          <div class="home__buttons">
+            <a href="#" class="button">Ordenar Ahora</a>
+            <a href="#" class="button button__outline">Menu Digital</a>
+          </div>
+
+          <div class="home__images">
+            <div class="home__circle">
+              <div class="home__subcircle"></div>
+            </div>
+            <img src="./src/assets/img/home-cake.png" alt="image" class="home__img">
+            <!-- Cherrys -->
+            <img src="./src/assets/img/cherry-1.png" alt="image" class="home__cherry-1">
+            <img src="./src/assets/img/cherry-2.png" alt="image" class="home__cherry-2">
+            <img src="./src/assets/img/strawberry-1.png" alt="image" class="home__strawberry-1">
+            <img src="./src/assets/img/strawberry-2.png" alt="image" class="home__strawberry-2">
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--~~~~~~~~~~~~~~~ FAVORITES ~~~~~~~~~~~~~~~-->
-    <section class="favorite" id="favorites"></section>
+    <section class="favorite" id="favorites">
+      <section class="favorite" id="favorites">
+        <div class="favorites__container container grid">
+          <div class="favorites__data">
+            <h2 class="section__title">
+              DISCOVER YOUR <br> FAVORITE CAKE FLAVORS
+            </h2>
+            <p class="favorites__description">
+              Try New Cake Flavors and Tempting Toppings.
+              Enjoy Our Selection of Delicious Cake Recipes
+              from Every Corner of the World.
+            </p>
+            <img src="./src/assets/img/cup-cake-1.png" alt="images" class="favorites__cup-cake-1">
+            <img src="./src/assets/img/cup-cake-2.png" alt="images" class="favorites__cup-cake-2">
+          </div>
+          <div class="favorites__swiper">
+            <div>
+              <!-- Articulos -->
+              <article class="favorites__article">
+                <img src="./src/assets/img/favorite-cake-1.png" alt="image" class="favorites__img">
+                <!-- Adornos -->
+                <img src="./src/assets/img/cherry-3.png" alt="" class="favorites_cherry-3">
+                <img src="./src/assets/img/cherry-4.png" alt="" class="favorites_cherry-4">
+              </article>
+              <article class="favorites__article">
+                <img src="./src/assets/img/favorite-cake-2.png" alt="image" class="favorites__img">
+                <!-- Adornos -->
+                <img src="./src/assets/img/cherry-3.png" alt="" class="favorites_cherry-3">
+                <img src="./src/assets/img/cherry-4.png" alt="" class="favorites_cherry-4">
+              </article>
+              <article class="favorites__article">
+                <img src="./src/assets/img/favorite-cake-3.png" alt="image" class="favorites__img">
+                <!-- Adornos -->
+                <img src="./src/assets/img/cherry-3.png" alt="" class="favorites_cherry-3">
+                <img src="./src/assets/img/cherry-4.png" alt="" class="favorites_cherry-4">
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
 
     <!--~~~~~~~~~~~~~~~ CARE ~~~~~~~~~~~~~~~-->
     <section class="care" id="care"></section>
@@ -83,19 +169,14 @@
   <!--~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~-->
   <footer class="footer"></footer>
 
+  <!--~~~~~~~~~~ MAIN JS ~~~~~~~~~~-->
+  <script src="./src/main.js"></script>
   <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
   <script src="./src/assets/js/scrollreveal.min.js"></script>
-
   <!--~~~~~~~~~~ SWIPER JS ~~~~~~~~~~-->
   <script src="./src/assets/js/swiper-bundle.min.js"></script>
 
-  <!--~~~~~~~~~~ MAIN JS ~~~~~~~~~~-->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const metaDescription = document.querySelector('meta[name="description"]');
-      console.log('Descripción de la página:', metaDescription.content);
-    });
-  </script>
+
 </body>
 
 </html>
