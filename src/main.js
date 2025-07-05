@@ -38,6 +38,12 @@ window.addEventListener('scroll', shadowHeader)
 
 
 /*~~~~~~~~~~~~~~~ SWIPER FAVORITES ~~~~~~~~~~~~~~~*/
+const swiperFavorites = new Swiper('.favorites__swiper', {
+  loop: true,
+  grapCursor: true,
+  slidesPerView: 'auto',
+  centerdSlides: 'auto',
+});
 
 
 /*~~~~~~~~~~~~~~~ SHOW SCROLL UP ~~~~~~~~~~~~~~~*/
