@@ -26,8 +26,7 @@
   /*~~~~~~~~~~~~~~~ Font and typography ~~~~~~~~~~~~~~~*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
-  /* --second-font: "Titan One", sans-serif; */
-  --second-font: "Cooper", sans-serif;
+  --second-font: "Titan One", sans-serif;
   --biggest-font-size: 3.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -442,7 +441,81 @@ header {
   font-size: 1.5rem;
 }
 /*~~~~~~~~~~~~~~~ PRODUCTS ~~~~~~~~~~~~~~~*/
+.products__container {
+  position: relative;
+  padding-top: 4.5rem;
+}
+.products__content {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 1.5rem;
+}
+.products__card {
+  position: relative;
+  background-color: var(--first-color-darken);
+  padding: 6.25rem 0.75rem 1.25rem;
+  border-radius: 1rem;
+  box-shadow: inset var(--shadow-card);
+  z-index: 10;
+}
+.products__img {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  right: 0;
+  width: 145px;
+  margin: 0 auto;
+  filter: var(--shadow-img);
+  transition: transform 0.4s;
+}
 
+.products__subtitle {
+  font-size: var(--small-font-size);
+}
+.products__price {
+  font-size: var(--second-font);
+}
+.products__button {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 1.25rem;
+  display: inline-flex;
+  outline: none;
+  border: none;
+  background-color: var(--second-color-dark);
+  padding: 4px;
+  border: 0.25rem;
+  font-size: 1.25rem;
+  color: var(--white-color);
+  box-shadow: inset var(--shadow-button);
+  cursor: pointer;
+}
+.products__card:hover .products__img {
+  transform: translateY(-0.5rem);
+}
+.products__strawberry,
+.products__cup-cake-2,
+.products__cup-cake-1 {
+  position: absolute;
+  width: 40px;
+  opacity: 0.7;
+}
+.products__strawberry {
+  top: -2.5rem;
+  left: 0;
+  rotate: 30deg;
+}
+.products__cup-cake-2 {
+  top: 17rem;
+  right: -1.5rem;
+  rotate: -15deg;
+}
+.products__cup-cake-1 {
+  left: 2rem;
+  right: 0;
+  margin: 0 auto;
+  bottom: 3rem;
+  rotate: 15deg;
+}
 /*~~~~~~~~~~~~~~~ CONTACT ~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~*/
